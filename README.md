@@ -9,7 +9,7 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 4. Deploy the code: `git push heroku master`
 5. Ensure that atleast one instance of the app is running: `heroku ps:scale web=1`
 6. List your app with: `heroku apps`
-7. The service is now running at `<heroku-app-name>.heroku.com` 
+7. The service is now running at `<heroku-app-name>.heroku.com`
 8. Go to the settings page of the repository of interest.
 9. Navigate to `WebHooks and Services`
 10. Click on `Add WebHook`
@@ -17,6 +17,13 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 12. Choose `Let me select Individual Events` and choose the `Pull Request Event`
 13. Add Webhook
 14. Get Someone to Open a PR on your repository :-)
+
+## To self-host using Docker
+
+1. Install [Docker](http://docs.docker.com/installation/) and [Compose](https://docs.docker.com/compose/install/). OSX users can skip above two and install [Docker Toolbox](https://www.docker.com/docker-toolbox)
+2. Move to this directory, and run `docker-compose up web`. It will install all the requirements on the first run
+3. Follow steps 8 through 14 in the previous list. In the `Payload URL` section of the `Add webhook` page of your Github repo settings, add `<your-public-ip:5000|Public-URL>/v1/PREvent`
+4. For development purposes, you can use [Ngrok](https://ngrok.io) to set up a temporary local tunnel and make your local server accessible via a public URL.
 
 ## Configuration
 
