@@ -26,4 +26,4 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 ## Try It Out!
 Submit a PR to this repository
 
-###### Made with :heart: - [@Deborah-Digge](http://github.com/Deborah-Digges)
+###### Made with :heart: - [@Deborah-Digges](http://github.com/Deborah-Digges)
