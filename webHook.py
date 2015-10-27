@@ -67,6 +67,7 @@ def postPRCommentToNewContributor():
 
 
 if __name__ == MAIN:
+    # Add a stream handler as well as a file handler
     fileHandler = RotatingFileHandler('foo.log', maxBytes=10000, backupCount=1)
     app.logger.addHandler(fileHandler) 
     streamHandler = logging.StreamHandler()
