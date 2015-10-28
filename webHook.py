@@ -12,6 +12,7 @@ import requests
 import sys
 
 
+
 app = Flask(__name__)
 
 config = Config('app.properties')
