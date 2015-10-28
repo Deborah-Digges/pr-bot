@@ -25,6 +25,15 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 3. Follow steps 8 through 14 in the previous list. In the `Payload URL` section of the `Add webhook` page of your Github repo settings, add `<your-public-ip:5000|Public-URL>/v1/PREvent`
 4. For development purposes, you can use [Ngrok](https://ngrok.io) to set up a temporary local tunnel and make your local server accessible via a public URL.
 
+## To Deploy on Google App Engine
+
+1. Install [Google App Engine SDK for Python](https://cloud.google.com/appengine/downloads?hl=en_US).
+2. Go to [Google Cloud Console](https://console.developers.google.com) and Create a project. [Here](https://cloud.google.com/appengine/docs) is a quickstart. 
+3. Copy the application id of the created project and paste it in `application` parameter of `app.yaml` file. 
+4. Follow steps 8 through 14 in the [instruction](#instructions-to-set-up-pr-bot) list. In the `Payload URL` section of the `Add webhook` page of your Github repo settings, add `<your-application-id>.appspot.com/v1/PREvent`
+5. Open the folder in Google App Engine Launcher as an existing project by Going to File -> Add Existing Application and deploy. 
+6. Alternatively, deploy through command line by running `appcfg.py -A <YOUR_APPLICATION_ID> update path-to-root-appengine-dir/`.
+
 ## Configuration
 
 1. Customize the  `message` in `app.properties`
