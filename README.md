@@ -16,7 +16,7 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 9. Go to the settings page of the repository of interest.
 10. Navigate to `WebHooks and Services`
 11. Click on `Add WebHook`
-12. For `Payload URL` enter `http://<heroku-app-name>.heroku.com/v1/PREvent`
+12. For `Payload URL` enter `http://<heroku-app-name>.herokuapp.com/v1/PREvent`
 13. Choose `Let me select Individual Events` and choose the `Pull Request Event`
 14. Add Webhook
 15. Get Someone to Open a PR on your repository :-)
