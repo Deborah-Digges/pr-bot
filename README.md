@@ -12,7 +12,7 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 5. Deploy the code: `git push heroku master`
 6. Ensure that atleast one instance of the app is running: `heroku ps:scale web=1`
 7. List your app with: `heroku apps`
-8. The service is now running at `<heroku-app-name>.heroku.com`
+8. The service is now running at `<heroku-app-name>.herokuapp.com`
 9. Go to the settings page of the repository of interest.
 10. Navigate to `WebHooks and Services`
 11. Click on `Add WebHook`
