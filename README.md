@@ -3,20 +3,23 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 
 ## Instructions to set up pr-bot
 
-1. Fill in your credentials in `app.properties`
-2. Create a [heroku account](https://www.heroku.com/)
-3. Create a heroku app: `heroku create`
-4. Deploy the code: `git push heroku master`
-5. Ensure that atleast one instance of the app is running: `heroku ps:scale web=1`
-6. List your app with: `heroku apps`
-7. The service is now running at `<heroku-app-name>.heroku.com`
-8. Go to the settings page of the repository of interest.
-9. Navigate to `WebHooks and Services`
-10. Click on `Add WebHook`
-11. For `Payload URL` enter `<heroku-app-name>.heroku.com/v1/PREvent`
-12. Choose `Let me select Individual Events` and choose the `Pull Request Event`
-13. Add Webhook
-14. Get Someone to Open a PR on your repository :-)
+
+1. Clone this repository: `  git clone https://github.com/Deborah-Digges/pr-bot.git`
+2. Fill in your github credentials(username & password) in `app.properties`
+2. Create a [heroku account](https://www.heroku.com/) and download the [heroku toolbelt](https://toolbelt.heroku.com)
+3. Navigate to the folder where you cloned this repo: `cd pr-bot`
+4. Create a heroku app: `heroku create`
+5. Deploy the code: `git push heroku master`
+6. Ensure that atleast one instance of the app is running: `heroku ps:scale web=1`
+7. List your app with: `heroku apps`
+8. The service is now running at `<heroku-app-name>.heroku.com`
+9. Go to the settings page of the repository of interest.
+10. Navigate to `WebHooks and Services`
+11. Click on `Add WebHook`
+12. For `Payload URL` enter `<heroku-app-name>.heroku.com/v1/PREvent`
+13. Choose `Let me select Individual Events` and choose the `Pull Request Event`
+14. Add Webhook
+15. Get Someone to Open a PR on your repository :-)
 
 ## To self-host using Docker
 
