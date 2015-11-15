@@ -28,7 +28,7 @@ def postPRCommentToNewContributor():
     pullRequestEvent = json.loads(request.data)
 
     # Only comment on PRs that have just been opened
-    if(pullRequestEvent[ACTION] == OPENED):
+    if(pullRequestEvent.has_key(ACTION) and pullRequestEvent[ACTION] == OPENED):
         pullRequest = pullRequestEvent[PULL_REQUEST]
 
         githubLoginName = pullRequest[USER][LOGIN]
