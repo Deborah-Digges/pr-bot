@@ -1,4 +1,5 @@
-# pr-bot
+# pr-bot [![Code Health](https://landscape.io/github/Deborah-Digges/pr-bot/master/landscape.svg?style=flat)](https://landscape.io/github/Deborah-Digges/pr-bot/master)
+
 A Pull Request Hook that comments on pull requests from users who are contributing to the repository for the first time
 
 ## Instructions to set up pr-bot
