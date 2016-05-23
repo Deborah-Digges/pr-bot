@@ -30,5 +30,5 @@ def getContributorList(ownerLoginName, repoName):
         password = config.getProperty('DEFAULT', 'password')
         response = requests.get(url, auth=(username, password))
         return _getContributorList(response)
-    except requests.exceptions.RequestException as e:
+    except requests.exceptions.RequestException:
         return []

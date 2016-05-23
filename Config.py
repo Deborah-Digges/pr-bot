@@ -5,7 +5,7 @@
 from ConfigParser import SafeConfigParser
 
 
-class Config:
+class Config(object):
 
     def __init__(self, propertyFileName):
         self.parser = SafeConfigParser()
