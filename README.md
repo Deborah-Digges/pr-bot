@@ -44,6 +44,6 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 2. Customize `new-users` in `app.properties`. When set to true, a comment is only made on a PR made by a new contributor.
 
 ## Try It Out!
-Submit a PR to this repository
+Submit a PR to this repository!
 
 ###### Made with :heart: - [@Deborah-Digges](http://github.com/Deborah-Digges)
