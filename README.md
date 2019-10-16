@@ -13,7 +13,7 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 5. Deploy the code: `git push heroku master`
 6. Ensure that atleast one instance of the app is running: `heroku ps:scale web=1`
 7. List your app with: `heroku apps`
-8. The service is now running at `<heroku-app-name>.herokuapp.com`
+8. The service will now be running at `<heroku-app-name>.herokuapp.com`
 9. Go to the settings page of the repository of interest.
 10. Navigate to `WebHooks and Services`
 11. Click on `Add WebHook`
@@ -26,7 +26,7 @@ A Pull Request Hook that comments on pull requests from users who are contributi
 
 1. Install [Docker](http://docs.docker.com/installation/) and [Compose](https://docs.docker.com/compose/install/). OSX users can skip above two and install [Docker Toolbox](https://www.docker.com/docker-toolbox)
 2. Move to this directory, and run `docker-compose up web`. It will install all the requirements on the first run
-3. Follow steps 8 through 14 in the previous list. In the `Payload URL` section of the `Add webhook` page of your Github repo settings, add `<your-public-ip:5000|Public-URL>/v1/PREvent`
+3. Follow steps 8 through 14 in the above list. In the `Payload URL` section of the `Add webhook` page of your Github repo settings, add `<your-public-ip:5000|Public-URL>/v1/PREvent`
 4. For development purposes, you can use [Ngrok](https://ngrok.io) to set up a temporary local tunnel and make your local server accessible via a public URL.
 
 ## To Deploy on Google App Engine
